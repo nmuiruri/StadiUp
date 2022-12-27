@@ -1,40 +1,63 @@
 body {
-    background-color: #79BABD;
-    font-family: 'Josefin Sans', sans-serif;
+  background-color: #79BABD;
+  font-family: 'Josefin Sans', sans-serif;
 }
-
-h1,p{
-    text-align:center;
-    color:white;
+main{
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+}
+section {
+  margin: autoy;
+  padding: 3remoe;
+}
+.flex{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.flex-center{
+  display: flex;
+  flex-direction:o row;
+  justify-content: space-around;
+}
+.img{
+  width:30%;
+  height:20%;e
+}
+h1{
+  text-align:center;
+  color:whiteo;
+  font-style:oblique;
+}
+.btn-link{
+  color: #FFF;
+  border: 2px solid rgb(216, 2, 134);
+  border-radius: 0px;
+  padding: 12px 18px;
+  margin: auto;
+  text-decoration: none;
 }
 .header_rectangle{
-    width: 100vw;
-    height:70px;
-    align-self:top;
-    background-color:#03989E;
-}
-
-h1{
-    font-style:oblique;
-    margin-top:10px;
-}
+  width: 100vw;
+  height:10px;
+  align-self:top;
+  background-color:#03989E;
 
 .heart {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width:100px;
-    height:30px;
+  display: block;  margin-left: auto;
+  margin-right: auto;
+  width:100px;
+  height:30px;
 }
 
 .bird{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width:100px;
-    height:90px;
-    margin-top:50px
+  display: block;
+  margin:auto;
+  width:100px;
+  height:90px;
 }
+
 .flex_container {
     justify-content: space-between;
     align-items: center;
@@ -63,17 +86,12 @@ h1{
     size: 25px;
 }
 
-section {
-    height:100vh;
-    width:100vw;
-}
-
 .list{
     color:white;
 }
 
 .box_center{
-    margin-top: 30%;
+    margin-top: 10%;
 }
 .button{
     border-radius:25px;
