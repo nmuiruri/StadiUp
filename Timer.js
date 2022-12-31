@@ -13,7 +13,7 @@ export default class Timer{
 
         this.interval = null;
         this.remainingSeconds = 0;
-        var session_counter =-1;
+        var session_counter = 0;
         this.updateInterfaceControls();
 
         this.el.control.addEventListener("click", () =>{
@@ -31,15 +31,16 @@ export default class Timer{
             session_counter = session_counter + 1;
 
             console.log(session_counter);
+            
+            if (session_counter === 1){
+                text_box.textContent = "Time to read";
+            }else if (session_counter === 2){
+                text_box.textContent = "Time to take notes on what you just read";
+            }else if (session_counter === 3){
+                text_box.textContent = "Time to make flashcards"
+            }
         });
 
-        if (session_counter = 0){
-            text_box.textContent = "Time to read";
-        }else if (session_counter = 1){
-            text_box.textContent = "Time to take notes on what you just read";
-        }else if (session_counter = 2){
-            text_box.textContent = "Time to make flashcards"
-        }
 
 
         this.el.shortBreak.addEventListener("click", () =>{
