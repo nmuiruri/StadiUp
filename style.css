@@ -1,9 +1,10 @@
 body {
   height:100%;
   width:100%;
-  background-image: linear-gradient(to left, blue, turquoise);
+  background-image: linear-gradient(to left,pink,rgb(123, 123, 228));
   font-family: 'Josefin Sans', sans-serif;
   color:white;
+  
 }
 main{
   width: 100vw;
