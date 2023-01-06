@@ -1,0 +1,124 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+.container{
+    height:100vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(./images/pexels-pixabay-206359.jpg    
+    );
+    background-position: center;
+    background-size: cover;
+    padding-left: 8%;
+    padding-right:8%;
+    box-sizing:border-box;
+}
+
+.navbar{
+    height:12%;
+    display: flex;
+    align-items: center;
+    transition:transform 0.5s;
+}
+
+.info_nav{
+    margin-top:-54%;
+    position: relative;left: 40px;
+}
+
+nav{
+    flex:1;
+    text-align: right;
+}
+
+nav ul li{
+    list-style:none;
+    display:inline-block;
+    margin-left:60px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color:#fff;
+    font-size: 13px;
+}
+.navbar:hover{
+    transform:translateY(-10px);
+}
+
+h2{
+    text-align: auto;
+    color: #fff;
+    padding-left:55%;
+}
+
+h1{
+    color:#fff;
+    text-align: center;
+}
+
+p{
+    color: #fff;
+    line-height: 25px;
+    text-align: justify;
+}
+
+.info{
+    color:#fff;
+    text-align: justify;
+    flex-basis: 50%;
+    padding-left:40% ;
+}
+
+section{
+    margin-top: 5%;
+}
+.card{
+    width:300px;
+    height:280px;
+    display:inline-block;
+    border-radius:10px;
+    padding:15px 25px;
+    box-sizing:border-box;
+    cursor:pointer;
+    margin:10px 15px;
+    background-position:center;
+    background-size:cover;
+    transition: transform 0.5s;
+    color:#fff;
+    flex-basis:50%;
+    position: relative;top:-270px;
+}
+.card1{
+    background-image:url(./images/info_write.jpg);
+}
+.timer{
+    font-family: sans-serif;
+    display:inline-block;
+    padding:24px 32px;
+    border-radius: 30px;
+    background-image:linear-gradient(rgba(40, 33, 72, 0.7),rgba(54, 37, 74, 0.7));
+    position: relative;left: 225px;
+    color: #fff;
+}
+.timer__part{
+    font-size:36px;
+    font-weight:bold;
+}
+
+.timer_text{
+    color:#fff;
+    position: relative; top: 60px;
+    text-align: center;
+}
+
+.timer__btn{
+    width:50px;
+    height: 50px;
+    margin-left: 16px;
+    border-radius: 50%;
+    border:none;
+    color:rgba(54, 37, 74, 0.7);
+    background: pointer;
+}

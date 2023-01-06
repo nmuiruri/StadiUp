@@ -8,6 +8,7 @@ export default class Timer{
             study: root.querySelector(".timer__btn--study"),
             shortBreak: root.querySelector(".timer__btn--shortBreak"),
             longBreak: root.querySelector(".timer__btn--longBreak"),
+            reset: root.querySelector(".timer__btn--reset"),
             
         };
 
@@ -23,21 +24,28 @@ export default class Timer{
                 this.stop();
             }
         });
+
+        this.el.reset.addEventListener("click", () =>{
+            this.stop();
+            this.remainingSeconds = 0 * 60;
+            this.updateInterfaceTime();
+            session_counter = 0;
+            text_box.textContent = "Start from the top";
+        });
         
         this.el.study.addEventListener("click", () =>{
             this.stop();
             this.remainingSeconds = 25 * 60;
             this.updateInterfaceTime();
-            session_counter = session_counter + 1;
-
-            console.log(session_counter);
-            
+            session_counter = session_counter + 1;            
             if (session_counter === 1){
-                text_box.textContent = "Time to read";
+                text_box.textContent = "Time to read,so take out your text books or go online and read about the topic that you are studying (don't take notes yet)";
             }else if (session_counter === 2){
-                text_box.textContent = "Time to take notes on what you just read";
+                text_box.textContent = "Time to take notes on what you just read and feel free to read more and use other sources for your note taking than what you just read.";
             }else if (session_counter === 3){
-                text_box.textContent = "Time to make flashcards"
+                text_box.textContent = "Time to make flashcards, so take out some paper, go on to quizlet or some other app where you can make flashcards and make some flashcards based on the topics that you covered today "
+            }else if (session_counter === 4){
+                text_box.textContent = "Todays study session is done but feel free to still use the timer for other activities or press the restart button to start another study session from the beginning"
             }
         });
 
@@ -128,6 +136,12 @@ export default class Timer{
         <button type="button" class="timer__btn timer__btn--longBreak"> 
             <span class="material-symbols-outlined">
             spa
+            </span>
+        </button>
+
+        <button type="button" class="timer__btn timer__btn--reset"> 
+            <span class="material-symbols-outlined">
+            device_reset
             </span>
         </button>
 

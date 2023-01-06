@@ -6,7 +6,7 @@
 .container{
     height:100vh;
     width: 100%;
-    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(./images/pexels-sibi-mathew-1092063.jpg);
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(./images/pexels-pixabay-206359.jpg);
     background-position: center;
     background-size: cover;
     padding-left: 8%;
@@ -18,6 +18,7 @@
     height:12%;
     display: flex;
     align-items: center;
+    transition:transform 0.5s;
 }
 
 nav{
@@ -36,6 +37,17 @@ nav ul li a{
     color:#fff;
     font-size: 13px;
 }
+.navbar:hover{
+    transform:translateY(-10px);
+}
+
+button{
+    transition:transform 0.5s;
+}
+
+button:hover{
+    transform:translateY(-10px);
+}
 
 .row{
     display: flex;
@@ -44,6 +56,8 @@ nav ul li a{
 }
 .col{
     flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
 }
 
 h1{
@@ -53,11 +67,11 @@ h1{
 
 p{
     color:#fff;
-    font-size: 11px;
-    line-height:15px;
+    font-size: 15px;
+    line-height:20px;
 }
 
-button{
+.button{
     width: 180px;
     color:#000;
     font-size:12px;
@@ -67,6 +81,12 @@ button{
     border-radius:20px;
     outline: none;
     margin-top:30px;
+    text-decoration:none;
+    text-align: center;
+}
+
+.button:hover{
+    background-image:linear-gradient(rgba(40, 33, 72, 0.7),rgba(54, 37, 74, 0.7));
 }
 
 .card{
@@ -88,17 +108,18 @@ button{
     transform:translateY(-10px);
 }
 
+
 .card1{
-    background-image:url(./images/pexels-joseph-redfield-2277923.jpg);
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(./images/pexels-joseph-redfield-2277923.jpg);
 }
 
 .card3{
-    background-image:url(./images/pexels-karolina-grabowska-4476376.jpg);
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(./images/pexels-karolina-grabowska-4476376.jpg);
 }
 
 .card2{
-    background-image:url(./images/pexels-dids-2969925.jpg);
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(./images/pexels-dids-2969925.jpg);
 }
 .card4{
-    background-image:url(./images/pexels-nataliya-vaitkevich-6863531.jpg);
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(./images/pexels-nataliya-vaitkevich-6863531.jpg);
 }

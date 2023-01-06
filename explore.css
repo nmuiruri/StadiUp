@@ -1,0 +1,146 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+.container{
+    height:100%;
+    width: 100%;
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(./images/pexels-pixabay-206359.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-left: 8%;
+    padding-right:8%;
+    box-sizing:border-box;
+    min-height: 100vh;
+}
+
+.navbar{
+    height:12%;
+    display: flex;
+    align-items: center;
+    transition:transform 0.5s;
+}
+
+.home_nav{
+    flex:1;
+    text-align: right;
+}
+
+nav ul li{
+    list-style:none;
+    display:inline-block;
+    margin-left:60px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color:#fff;
+    font-size: 13px;
+}
+.navbar:hover{
+    transform:translateY(-10px);
+}
+
+h1{
+    color: #fff;
+    text-align: center;
+    padding-bottom: 5%;
+}
+
+h3{
+    color: #fff;
+    padding-bottom: 5%;
+}
+
+p{
+    color:#fff;
+    line-height:normal;
+    text-align: justify;
+}
+
+section{
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right:auto;
+    display:flex;
+    justify-content: center;
+}
+
+.info{
+    display:flex;
+    flex-direction: row;
+    width:100%;
+}
+
+.info_content{
+    color:#fff;
+    text-align: justify;
+    width:70%;
+}
+
+.card{
+    width:30%;
+    height:280px;
+    display:inline-block;
+    border-radius:10px;
+    padding:15px 25px;
+    box-sizing:border-box;
+    cursor:pointer;
+    margin:10px 15px;
+    background-position:center;
+    background-size:cover;
+    transition: transform 0.5s;
+    color:#fff;
+    flex-basis:50%;    
+}
+.card1{
+    background-image:url(./images/info_clock.jpg);
+    margin-top: -1%;
+    position:left;
+}
+.card2{
+    background-image:url(./images/info_write.jpg);
+    margin-top: -1%;
+}
+.card3{
+    background-image:url(./images/info_calender.jpg);
+    margin-top: -1%;
+}
+.card4{
+    background-image:url(./images/info_cards.jpg);
+    margin-top: -1%;
+}
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+  /* Style the buttons that are used to open the tab content */
+.info_nav {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    color:#fff;
+}
+
+  /* Change background color of buttons on hover */
+
+/* Create an active/current info_nav class */
+.info_nav.active {
+    background-image:linear-gradient(rgba(40, 33, 72, 0.7),rgba(54, 37, 74, 0.7));
+    text-align: center;
+}
+
+  /* Style the info */
+.info {
+    display: none;
+    padding: 6px 12px;
+    border-top: none;
+    text-align: justify;
+}
