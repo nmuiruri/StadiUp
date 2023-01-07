@@ -23,6 +23,7 @@
 }
 
 .home_nav{
+    margin-top: 2%;
     flex:1;
     text-align: right;
 }

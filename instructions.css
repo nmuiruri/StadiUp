@@ -4,7 +4,7 @@
 }
 
 .container{
-    height:100vh;
+    height:100%;
     width: 100%;
     background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(./images/pexels-pixabay-206359.jpg);
     background-position: center;
@@ -33,6 +33,13 @@ nav ul li{
     margin-left:60px;
 }
 
+.instructions_btn{
+    display: flex;
+    flex-direction: row;
+    width:100%;
+    margin-left: 2%;
+}
+
 nav ul li a{
     text-decoration: none;
     color:#fff;
@@ -42,16 +49,7 @@ nav ul li a{
     transform:translateY(-10px);
 }
 
-button{
-    transition:transform 0.5s;
-}
-
-button:hover{
-    transform:translateY(-10px);
-}
-
 .row{
-    display: flex;
     height:88%;
     align-items:center;
 }
@@ -69,7 +67,8 @@ h1{
 p{
     color:#fff;
     font-size: 15px;
-    line-height:20px;
+    text-align: justify;
+    margin-bottom: 5%;
 }
 
 .button{
@@ -86,27 +85,27 @@ p{
     text-align: center;
 }
 
-.button:hover{
-    background-image:linear-gradient(rgba(40, 33, 72, 0.7),rgba(54, 37, 74, 0.7));
+.timer__part{
+    font-size:36px;
+    font-weight:bold;
 }
 
-.card{
-    width:150px;
-    height:180px;
-    display:inline-block;
-    border-radius:10px;
-    padding:15px 25px;
-    box-sizing:border-box;
-    cursor:pointer;
-    margin:10px 15px;
-    background-position:center;
-    background-size:cover;
-    transition: transform 0.5s;
-    color:#fff
+.timer_text{
+    color:#fff;
+    position: relative; top: 60px;
+    text-align: center;
 }
 
-.card:hover{
-    transform:translateY(-10px);
+.timer__btn{
+    width:40px;
+    height: 40px;
+    margin-left: 16px;
+    border-radius: 40%;
+    border:none;
+    color:rgba(54, 37, 74, 0.7);
+    background: pointer;
+    margin-right: 5%;
+    margin-bottom:5%;
 }
 
 
