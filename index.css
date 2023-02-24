@@ -66,17 +66,21 @@ h1{
     color:#fff;
     font-size: 60px;
 }
+h4{
+    color:#fff;
+    font-size: 20px;
+}
 
 p{
     color:#fff;
-    font-size: 15px;
-    line-height:20px;
+    font-size: 22px;
+    line-height:1.5;
 }
 
 .button{
     width: 180px;
     color:#000;
-    font-size:12px;
+    font-size:18px;
     padding:12px;
     background:#fff;
     border:0;

@@ -5,14 +5,14 @@
 
 .container{
     height:100%;
-    width: 100%;
+    width:100%;
     background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(./images/pexels-pixabay-206359.jpg);
     background-position: center;
     background-size: cover;
     padding-left: 8%;
     padding-right:8%;
     box-sizing:border-box;
-    min-height: 100vh;
+    min-height: 105vh;
 }
 
 .navbar{
@@ -42,7 +42,7 @@ nav ul li{
 nav ul li a{
     text-decoration: none;
     color:#fff;
-    font-size: 13px;
+    font-size: 24px;
 }
 .navbar:hover{
     transform:translateY(-10px);
@@ -57,12 +57,14 @@ h2{
 h1{
     color:#fff;
     text-align: center;
+    font-size:60px;
 }
 
 p{
     color: #fff;
-    line-height: 25px;
-    text-align: justify;
+    line-height: 2.5;
+    text-align: center;
+    font-size: 22px;
 }
 
 .info{
@@ -74,6 +76,14 @@ p{
 
 section{
     margin-top: 3%;
+}
+
+.clock{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
 }
 .card{
     width:300px;
@@ -96,12 +106,14 @@ section{
 }
 .timer{
     font-family: sans-serif;
-    display:inline-block;
+    display:flex;
+    flex-direction: row;
     padding:24px 32px;
     border-radius: 30px;
     background-image:linear-gradient(rgba(40, 33, 72, 0.7),rgba(54, 37, 74, 0.7));
-    position: relative;left: 225px;
     color: #fff;
+    margin: auto;
+    max-width: 600px;
 }
 .timer__part{
     font-size:36px;
@@ -112,6 +124,7 @@ section{
     color:#fff;
     position: relative; top: 60px;
     text-align: center;
+    max-width: 100%;
 }
 
 .timer__btn{
