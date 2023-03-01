@@ -40,23 +40,20 @@ p{
     border-radius:10px;
     background-position:center;
     background-size:cover;
+    margin-top: 6%;
+
 }
 .card1{
     background-image:url(./images/info_clock.jpg);
-    margin-top: -1%;
-    position:left;
 }
 .card2{
     background-image:url(./images/info_write.jpg);
-    margin-top: -1%;
 }
 .card3{
     background-image:url(./images/info_calender.jpg);
-    margin-top: -1%;
 }
 .card4{
     background-image:url(./images/info_cards.jpg);
-    margin-top: -1%;
 }
 .tab {
     overflow: hidden;
