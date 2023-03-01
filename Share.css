@@ -1,17 +1,18 @@
 *{
     margin:auto;
     padding:auto;
+    box-sizing:border-box;
 }
-
-.container{
-    height:100%;
-    max-width: 1280px;
+body{
     background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(./images/pexels-pixabay-206359.jpg);
     background-position: center;
     background-size: cover;
+}
+.container{
+    height:100%;
+    max-width: 1280px;
     padding-left: 8%;
     padding-right:8%;
-    box-sizing:border-box;
 }
 
 .navbar{
