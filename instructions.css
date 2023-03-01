@@ -12,116 +12,14 @@
     padding-left: 8%;
     padding-right:8%;
     box-sizing:border-box;
-    min-height: 100vh;
-}
-
-.navbar{
-    height:12%;
-    display: flex;
-    align-items: center;
-    transition:transform 0.5s;
-}
-
-nav{
-    flex:1;
-    text-align: right;
-    margin-top: 2%;
-}
-
-nav ul li{
-    list-style:none;
-    display:inline-block;
-    margin-left:60px;
-}
-
-.instructions_btn{
-    display: flex;
-    flex-direction: row;
-    width:100%;
-    margin-left: 2%;
-}
-
-nav ul li a{
-    text-decoration: none;
-    color:#fff;
-    font-size: 24px;
-}
-.navbar:hover{
-    transform:translateY(-10px);
-}
-
-.row{
-    height:88%;
-    align-items:center;
-}
-.col{
-    flex-basis: 50%;
-    display: flex;
-    flex-direction: column;
-}
-
-h1{
-    color:#fff;
-    font-size: 60px;
+    min-height: 150vh;
 }
 
 p{
-    color:#fff;
-    font-size: 22px;
     text-align: justify;
     margin-bottom: 5%;
-    line-height:1.5;
 }
 
-.button{
-    width: 180px;
-    color:#000;
-    font-size:18px;
-    padding:12px;
-    background:#fff;
-    border:0;
-    border-radius:20px;
-    outline: none;
-    margin-top:30px;
-    text-decoration:none;
-    text-align: center;
-}
-
-.timer__part{
-    font-size:36px;
-    font-weight:bold;
-}
-
-.timer_text{
-    color:#fff;
-    position: relative; top: 60px;
-    text-align: center;
-}
-
-.timer__btn{
-    width:40px;
-    height: 40px;
-    margin-left: 16px;
-    border-radius: 40%;
-    border:none;
-    color:rgba(54, 37, 74, 0.7);
-    background: pointer;
-    margin-right: 5%;
-    margin-bottom:5%;
-}
-
-
-.card1{
-    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(./images/pexels-joseph-redfield-2277923.jpg);
-}
-
-.card3{
-    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(./images/pexels-karolina-grabowska-4476376.jpg);
-}
-
-.card2{
-    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(./images/pexels-dids-2969925.jpg);
-}
-.card4{
-    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(./images/pexels-nataliya-vaitkevich-6863531.jpg);
+li{
+    text-decoration: none;
 }
